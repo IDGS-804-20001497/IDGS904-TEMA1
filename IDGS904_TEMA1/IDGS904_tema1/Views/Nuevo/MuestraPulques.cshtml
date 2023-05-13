@@ -1,0 +1,31 @@
+﻿@model List <IDGS904_tema1.Models.Producto>
+
+@{ 
+    ViewBag.Title = "MuestraPulques";
+}
+<h2>Muestra pulques</h2>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Cantidad</th>
+            <th>Produccion</th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Descripcion</td>
+                    <td>@item.Cantidad</td>
+                    <td>@item.Produccion.ToString("dd/MM/yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+

@@ -1,0 +1,29 @@
+﻿@model IDGS904_temaa1.Models.distanciaP
+
+@{
+    ViewBag.Title = "Distancia";
+}
+
+<div class="container">
+    <div class="row col-lg-6">
+        <form action="/" method="post">
+            <label for="Num1">X2</label>
+            <input type="text" name="Num1" value="" />
+            <br>
+            <label for="Num2">X1</label>
+            <input type="text" name="Num2" value="" />
+            <br>
+            <label for="Num2">Y2</label>
+            <input type="text" name="Num2" value="" />
+            <br>
+            <label for="Num2">y1</label>
+            <input type="text" name="Num2" value="" />
+            <br>
+            <input type="submit" name="cal" value="calcular" />
+        </form>
+    </div>
+
+    <div class="row col-lg-6">
+        <h1>El resultado es: @Html.DisplayFor(model => Model.Res)</h1>
+    </div>
+</div>
