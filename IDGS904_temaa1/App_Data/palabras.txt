@@ -1,0 +1,3 @@
+pelota,ball
+hola,hi
+gato,cat
